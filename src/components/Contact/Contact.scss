@@ -1,0 +1,81 @@
+@import "../../variables.scss";
+
+.Contact {
+  height: 100vh;
+  width: 100vw;
+  background: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-family: $base-font;
+  color: white;
+
+  img {
+    height: 60vh;
+  }
+
+  h1 {
+    font-size: 7em;
+    font-family: $h1-font;
+    margin-bottom: 0.5em;
+  }
+
+  h2 {
+    font-size: 2em;
+    font-family: $h2-font;
+    margin-bottom: 1em;
+  }
+
+  p {
+    font-size: 1.2em;
+  }
+
+  .email {
+    font-family: $h1-font;
+    margin-top: 1em;
+    display: flex;
+    align-items: center;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+
+    textarea,
+    input {
+      background-color: rgb(39, 39, 39);
+      border: none;
+      color: white;
+    }
+
+    label {
+      margin: 1em 0 0.5em 0;
+    }
+    input {
+      line-height: 2.5em;
+      padding: 0 10px;
+    }
+    textarea {
+      resize: none;
+      height: 200px;
+    }
+
+    button {
+      display: flex;
+      align-items: center;
+      border: 2px solid white;
+      background: none;
+      color: white;
+      width: 50%;
+      padding: 3% 6%;
+      margin-top: 2em;
+
+      &:hover {
+        cursor: pointer;
+        color: black;
+        background: white;
+      }
+    }
+  }
+}

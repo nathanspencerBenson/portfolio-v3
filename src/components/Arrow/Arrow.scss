@@ -1,0 +1,20 @@
+.Arrow {
+  display: block;
+  position: absolute;
+  z-index: 10;
+  bottom: 5vh;
+  width: 100vw;
+  text-align: center;
+  animation: bounce 1s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+
+@keyframes bounce {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(50px);
+  }
+}

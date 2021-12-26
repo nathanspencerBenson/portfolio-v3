@@ -10,10 +10,12 @@ nav {
   padding: 2vh 5vw;
   font-family: $base-font;
   font-size: 1.5em;
+  background-color: rgba(0, 0, 0, 0.438);
+  color: white;
 
   a {
     text-decoration: none;
-    color: black;
+    color: white;
     margin: 0 1em;
     font-size: 1.5em;
 

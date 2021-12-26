@@ -2,6 +2,8 @@ import React from 'react';
 import './LandingPage.scss';
 import RINGS from 'vanta/dist/vanta.rings.min';
 import { IoIosArrowDown } from 'react-icons/io';
+import PageGuide from './PageGuide/PageGuide';
+import Arrow from './Arrow/Arrow';
 
 
 class LandingPage extends React.Component {
@@ -19,7 +21,7 @@ class LandingPage extends React.Component {
   minWidth: 200.00,
   scale: 1.00,
   scaleMobile: 1.00,
-  backgroundColor: 0xf8fbff
+  backgroundColor: 0xe317e3
       })
     }
     componentWillUnmount() {
@@ -29,10 +31,11 @@ class LandingPage extends React.Component {
     render() {
       return(
        <div className="LandingPage" ref={this.vantaRef}>
+           <PageGuide />
           <h1> Hi! I'm Nathan Benson. <br />
                 A Front-end Developer.
             </h1>
-            <span><IoIosArrowDown size={50} /></span>
+            <Arrow />
         
       </div>)
     }

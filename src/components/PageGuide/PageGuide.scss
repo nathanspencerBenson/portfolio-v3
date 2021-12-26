@@ -1,0 +1,18 @@
+.PageGuide {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 2vw;
+
+  div {
+    height: 10px;
+    width: 10px;
+    border: 2px solid green;
+    margin: 5px 20px;
+    transform: rotate(45deg);
+
+    &:nth-child(1) {
+      background: rgb(71, 255, 71);
+    }
+  }
+}
