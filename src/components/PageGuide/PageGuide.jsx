@@ -1,13 +1,28 @@
-import React from 'react';
+import { React, useState, useEffect } from 'react';
 import './PageGuide.scss';
 
-function PageGuide() {
+
+function PageGuide(props) {
+ 
+
+console.log(props.selected)
+   
+
     return (
         <div className="PageGuide">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
+            {props.selected.map((item) => {
+                if(item.selected) {
+                    return (
+                        <div className="selected"></div>
+                    )}
+                else {
+                    return (
+                        <div></div>
+                    )
+                }
+                
+            })}
+           
             
         </div>
     )

@@ -8,7 +8,7 @@ import Arrow from '../Arrow/Arrow';
 function About() {
     return (
         <div className="About">
-            <PageGuide />
+            <PageGuide selected={[{}, {selected: true}, {}, {}]} />
             <div>
                 <h1>ABOUT <div><GiCompass size={100} color={'gold'}/></div></h1>
                 

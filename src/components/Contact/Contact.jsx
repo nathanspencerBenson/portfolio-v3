@@ -7,7 +7,7 @@ import { FiMail } from 'react-icons/fi';
 function Contact() {
     return (
         <div className="Contact">
-            <PageGuide />
+            <PageGuide selected={[{}, {}, {}, {selected: true}]} />
             <div>
                 <h1>CONTACT</h1>
                 <h2>Have a question or want to work together?</h2>

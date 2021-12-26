@@ -7,29 +7,26 @@
   font-family: $base-font;
   display: flex;
   align-items: center;
+  background: #3197d7;
+  color: white;
 
   h1 {
     font-size: 5em;
     margin-left: 5vw;
   }
 
-  span {
-    display: block;
-    position: absolute;
-    z-index: 10;
-    bottom: 5vh;
-    width: 100vw;
-    animation: bounce 1s;
-    animation-direction: alternate;
-    animation-iteration-count: infinite;
-  }
-}
+  .image__container {
+    position: relative;
+    img {
+      height: 50vh;
+    }
 
-@keyframes bounce {
-  from {
-    transform: translateY(0);
-  }
-  to {
-    transform: translateY(50px);
+    div {
+      width: 100%;
+      height: 10vh;
+      background: #3197d7;
+      position: absolute;
+      bottom: 0;
+    }
   }
 }

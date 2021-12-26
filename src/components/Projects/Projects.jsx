@@ -3,12 +3,14 @@ import './Projects.scss';
 import launchProject from '../../assets/launch-project.svg';
 import PageGuide from '../PageGuide/PageGuide';
 import Arrow from '../Arrow/Arrow';
+import Nav from '../Nav/Nav';
 
 function Projects() {
     return (
         <div className="Projects">
             <div className="projects__landingPage">
-                <PageGuide />
+                <PageGuide selected={[{}, {}, {selected: true}, {}]} />
+                <div className="colorBlock"></div>
                 <img src={launchProject} />
                 <div>
                 <h1>WORK</h1>

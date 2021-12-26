@@ -2,9 +2,9 @@ import React from 'react';
 import './Nav.scss';
 import {FiGithub} from 'react-icons/fi';
 
-function Nav() {
+function Nav(props) {
     return (
-        <nav>
+        <nav className={props.classname}>
             <ul>
                 <li><a href='#'>Home</a><div className="border" style={{transform: 'rotate(3deg)'}}></div></li>
                 <li><a href='#'>Projects</a><div className="border" style={{transform: 'rotate(-3deg)'}}></div></li>

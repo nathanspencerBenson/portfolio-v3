@@ -3,14 +3,13 @@
 nav {
   position: absolute;
   top: 0;
-  z-index: 999;
+  z-index: 2;
   display: flex;
   justify-content: space-between;
   width: 100vw;
   padding: 2vh 5vw;
   font-family: $base-font;
   font-size: 1.5em;
-  background-color: rgba(0, 0, 0, 0.438);
   color: white;
 
   a {
