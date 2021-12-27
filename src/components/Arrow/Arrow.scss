@@ -1,8 +1,16 @@
+.Arrow__container {
+  height: 70px;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
 .Arrow {
   display: block;
   position: absolute;
   z-index: 10;
   bottom: 5vh;
+  left: 0;
   width: 100vw;
   text-align: center;
   animation: bounce 1s;

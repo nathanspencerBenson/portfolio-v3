@@ -1,0 +1,80 @@
+@import "../../../Assets/variables.scss";
+
+.ProjectCard {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  width: 70vw;
+  height: 100vh;
+  font-family: $base-font;
+  color: #a8b3d1;
+
+  img {
+    width: 40vw;
+    height: 35vh;
+    transition: 0.2s;
+  }
+
+  h1 {
+    color: #a8b3d1;
+    text-align: center;
+    font-size: 2rem;
+    margin: 0.5rem 0;
+  }
+
+  h2 {
+    text-align: center;
+    font-family: $base-font;
+    color: #11fa3a;
+    font-size: 1rem;
+  }
+
+  p {
+    position: relative;
+    z-index: 2;
+    background: #38157a;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 1rem 1rem;
+  }
+
+  .margin-left {
+    margin-left: -5%;
+  }
+  .margin-right {
+    margin-right: -5%;
+  }
+
+  ul {
+    list-style: none;
+    display: flex;
+
+    li {
+      margin: 0.5rem 1rem;
+      color: #15ad2f;
+
+      @media (max-width: 767.98px) {
+        margin: 0.25rem 0.5rem;
+      }
+
+      @media (max-width: 575.98px) {
+        font-size: 0.8rem;
+        margin: 0.1rem 0.2rem;
+      }
+    }
+  }
+
+  a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+
+    &:hover {
+      color: #11fa3a;
+    }
+  }
+}
+.reverse {
+  flex-direction: row-reverse;
+}

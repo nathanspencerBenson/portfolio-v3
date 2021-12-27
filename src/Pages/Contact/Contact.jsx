@@ -1,13 +1,11 @@
 import React from 'react';
-import PageGuide from '../PageGuide/PageGuide';
 import './Contact.scss';
 import { GiFaceToFace } from 'react-icons/gi';
 import { FiMail } from 'react-icons/fi';
 
 function Contact() {
     return (
-        <div className="Contact">
-            <PageGuide selected={[{}, {}, {}, {selected: true}]} />
+        <div className="Contact section" id="Contact">
             <div>
                 <h1>CONTACT</h1>
                 <h2>Have a question or want to work together?</h2>
