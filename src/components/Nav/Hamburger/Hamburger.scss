@@ -1,0 +1,50 @@
+.hamburger {
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  justify-content: space-around;
+  flex-flow: column nowrap;
+  z-index: 10;
+  position: absolute;
+  right: 20px;
+  overflow: visible;
+  @media (min-width: 575.98px) {
+    display: none;
+  }
+}
+
+.hamburger:hover {
+  cursor: pointer;
+}
+
+.hamburger.hidden {
+  display: none;
+}
+
+.burger {
+  width: 3rem;
+  height: 0.5rem;
+  border-radius: 10px;
+  background-color: rgb(216, 216, 216);
+  transform-origin: 1px;
+  transition: all 0.3s linear;
+}
+
+.burger.burger1 {
+  transform: rotate(45deg);
+}
+
+.burger.burger2 {
+  transform: translate(100%);
+  opacity: 0;
+  background-color: black;
+}
+
+.hamburger:hover .burgerHover {
+  transform: translate(-50%);
+  background-color: black;
+}
+
+.burger.burger3 {
+  transform: rotate(-45deg);
+}

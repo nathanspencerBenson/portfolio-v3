@@ -56,11 +56,44 @@ nav {
     }
   }
 
+  .menu {
+    @media (max-width: 575.98px) {
+      display: none;
+    }
+  }
+
   .github__logo {
     @media (max-width: 575.98px) {
       position: absolute;
       bottom: -90vh;
       left: 10px;
+    }
+  }
+
+  .side-menu.hidden {
+    transform: translate(100%);
+  }
+
+  .side-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background: rgb(0, 0, 0);
+    color: white;
+    transition-duration: 0.5s;
+    transition-delay: 0.2s;
+    line-height: 1.5em;
+    ul {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      height: 60vh;
     }
   }
 }
