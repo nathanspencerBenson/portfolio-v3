@@ -1,22 +1,29 @@
 @import "../../Assets/variables.scss";
 
 .Projects {
-  padding-top: 5vh;
   position: absolute;
   top: 0;
   z-index: 1000;
-  height: 100vh;
   width: 100vw;
-  transform: translate(100%);
-  background: #4d1ca8;
+  margin-top: 100vh;
+  transform: translate(150%);
   display: flex;
   flex-direction: column;
   align-items: center;
   transition-duration: 1.2s;
-  color: white;
+  background: #0b0c10;
+
+  .Projects__nav {
+    position: fixed;
+    top: 0;
+    z-index: 10000;
+    a {
+      color: #66fcf1;
+    }
+  }
 
   button {
-    color: black;
+    color: #66fcf1;
     background: none;
     border: none;
     font-size: 2em;

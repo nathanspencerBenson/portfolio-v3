@@ -19,9 +19,10 @@ function App() {
   }
   return (
   <div class="App">
-    <Nav />
-    <FullPage showProjects={toggleProjects}/>
-    <Projects showProjects={toggleProjects} displayProjects={displayProjects}/>
+    <Nav displayProjects={displayProjects} toggleProjects={toggleProjects} />
+    <FullPage toggleProjects={toggleProjects} displayProjects={displayProjects}/>
+    {/* <Projects showProjects={toggleProjects} displayProjects={displayProjects}/> */}
+   
     
     
 </div>

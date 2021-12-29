@@ -5,76 +5,91 @@
   position: relative;
   justify-content: center;
   align-items: center;
-  width: 70vw;
-  height: 100vh;
+  width: 90vw;
   font-family: $base-font;
-  color: #a8b3d1;
+  height: 100vh;
+  position: relative;
+  color: white;
+
+  .ProjectCard__container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
   img {
-    width: 40vw;
-    height: 35vh;
+    width: 60vw;
+    height: 50vh;
     transition: 0.2s;
+    @media (max-width: 767.98px) {
+      width: 80vw;
+    }
   }
 
-  h1 {
-    color: #a8b3d1;
-    text-align: center;
-    font-size: 2rem;
-    margin: 0.5rem 0;
-  }
-
-  h2 {
-    text-align: center;
-    font-family: $base-font;
-    color: #11fa3a;
-    font-size: 1rem;
-  }
-
-  p {
-    position: relative;
-    z-index: 2;
-    background: #38157a;
+  .text {
+    width: 60vw;
+    height: 50vh;
+    background-color: #0b0c10;
+    border: 2px solid #66fcf1;
+    color: white;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    padding: 1rem 1rem;
-  }
+    margin-top: -20vh;
+    margin-left: 25vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+    @media (max-width: 767.98px) {
+      width: 70vw;
+    }
 
-  .margin-left {
-    margin-left: -5%;
-  }
-  .margin-right {
-    margin-right: -5%;
+    h1,
+    p,
+    a,
+    li {
+      @media (max-width: 767.98px) {
+        font-size: 0.8em;
+      }
+    }
+
+    h1,
+    p {
+      width: 80%;
+    }
+
+    h1,
+    h2 {
+      text-align: center;
+      color: #66fcf1;
+    }
   }
 
   ul {
     list-style: none;
     display: flex;
+    width: 50vw;
+    justify-content: space-around;
+    flex-wrap: wrap;
 
     li {
-      margin: 0.5rem 1rem;
-      color: #15ad2f;
-
-      @media (max-width: 767.98px) {
-        margin: 0.25rem 0.5rem;
-      }
-
-      @media (max-width: 575.98px) {
-        font-size: 0.8rem;
-        margin: 0.1rem 0.2rem;
-      }
+      border: 2px solid #66fcf1;
+      padding: 0.25em 1em;
+      margin: 1em 0;
     }
   }
 
-  a {
+  .links {
     display: flex;
-    align-items: center;
-    text-decoration: none;
-    color: black;
-
-    &:hover {
-      color: #11fa3a;
+    justify-content: space-around;
+    width: 100%;
+    a {
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      color: #45a29e;
     }
   }
-}
-.reverse {
-  flex-direction: row-reverse;
 }

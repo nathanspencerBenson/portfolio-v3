@@ -11,7 +11,7 @@ function Work(props) {
 
         console.log('work', props)
     return (
-        <div className="Work section" id="Projects">
+        <div className="Work section" id="Work">
             <div className="Work__landingPage">
                 <img src={launchProject} />
                 <div>
@@ -19,7 +19,7 @@ function Work(props) {
                     <img src={launchProject} />
                     <h2>Welcome To My World</h2>
                     <p>A collection of some of the Apps and websites I've built</p>
-                    <button onClick={props.showProjects}>EXPLORE</button>
+                    <button onClick={props.toggleProjects}>EXPLORE</button>
                     
                 </div>
                 <Arrow />

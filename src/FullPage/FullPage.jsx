@@ -6,6 +6,7 @@ import About from '../Pages/About/About';
 import Contact from '../Pages/Contact/Contact';
 import Work from '../Pages/Work/Work';
 import Skills from '../Pages/Skills/Skills';
+import Projects from '../Pages/Projects/Projects';
 
 const Fullpage = (props) => (
   <ReactFullpage
@@ -20,10 +21,11 @@ const Fullpage = (props) => (
           
         <ReactFullpage.Wrapper>
             <LandingPage/>
-            <Work showProjects={props.showProjects} />
+            <Work toggleProjects={props.toggleProjects} />
             <Skills />
             <About />
             <Contact />
+            <Projects toggleProjects={props.toggleProjects} displayProjects={props.displayProjects}/>
         </ReactFullpage.Wrapper>
       );
     }}

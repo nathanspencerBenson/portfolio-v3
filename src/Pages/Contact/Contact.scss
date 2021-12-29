@@ -121,4 +121,19 @@
       }
     }
   }
+
+  .success {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #ecfadc;
+    border: 2px solid green;
+    color: black;
+  }
+
+  .failure {
+    text-align: center;
+    padding: 20px 0;
+    background-color: rgb(255, 94, 94);
+    border: 2px solid red;
+  }
 }
