@@ -26,6 +26,18 @@
     @media (max-width: 767.98px) {
       width: 80vw;
     }
+    @media (max-width: 360px) {
+      display: none;
+    }
+  }
+
+  .queryImage {
+    display: none;
+    @media (max-width: 360px) {
+      display: block;
+      width: 70vw;
+      height: 30vh;
+    }
   }
 
   .text {
@@ -44,6 +56,13 @@
     padding: 10px;
     @media (max-width: 767.98px) {
       width: 70vw;
+    }
+    @media (max-width: 360px) {
+      margin-left: 0;
+      width: 80vw;
+      margin-top: 10vh;
+      height: 80vh;
+      padding: 2vw;
     }
 
     h1,

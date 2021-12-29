@@ -16,7 +16,7 @@ function ProjectCard(props) {
                 <div className="text" >
                     <h1>{props.title}</h1>
                     <h2>{props.subTitle}</h2>
-                
+                    <img className="queryImage" src={props.image} ></img>
                     <p>{props.description}</p>
                     <ul>
                         {props.tech.map(item => <li>{item}</li>)}

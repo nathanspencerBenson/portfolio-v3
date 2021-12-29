@@ -7,6 +7,7 @@
   background-color: #fd5f46;
   display: flex;
   align-items: center;
+  justify-content: center;
   font-family: $base-font;
   color: white;
 
@@ -19,6 +20,10 @@
     @media (max-width: 1199.98px) {
       width: 60vw;
     }
+    @media (max-width: 420px) {
+      width: 80vw;
+      margin-left: 10vw;
+    }
   }
 
   h1 {
@@ -30,6 +35,10 @@
     margin-top: 25vh;
     @media (max-width: 1199.98px) {
       font-size: 5em;
+    }
+
+    @media (max-width: 420px) {
+      margin-top: 10vh;
     }
   }
 

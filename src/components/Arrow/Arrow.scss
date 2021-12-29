@@ -1,6 +1,10 @@
 .Arrow__container {
   height: 70px;
 
+  @media (max-width: 360px) {
+    height: 30px;
+  }
+
   &:hover {
     cursor: pointer;
   }
@@ -16,6 +20,12 @@
   animation: bounce 1s;
   animation-direction: alternate;
   animation-iteration-count: infinite;
+  @media (max-width: 360px) {
+    bottom: 2vh;
+    animation: bounceMini 1s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+  }
 }
 
 @keyframes bounce {
@@ -24,5 +34,14 @@
   }
   to {
     transform: translateY(50px);
+  }
+}
+
+@keyframes bounceMini {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(25px);
   }
 }

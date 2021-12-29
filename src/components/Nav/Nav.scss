@@ -68,6 +68,16 @@ nav {
       bottom: -90vh;
       left: 10px;
     }
+    @media (max-width: 360px) {
+      bottom: -93vh;
+      left: 5px;
+    }
+
+    span {
+      @media (max-width: 360px) {
+        display: none;
+      }
+    }
   }
 
   .side-menu.hidden {

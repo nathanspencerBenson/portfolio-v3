@@ -29,7 +29,7 @@ const Nav = ( {displayProjects, toggleProjects } ) => {
             </ul>
             <div className="logo"></div>
             <div>
-                <a className={`${displayProjects ? ' github__logo displayProjectsTrue' : 'github__logo'}`} href='https://github.com/nathanspencerBenson'><FiGithub size={25} />Github </a>
+                <a className={`${displayProjects ? ' github__logo displayProjectsTrue' : 'github__logo'}`} href='https://github.com/nathanspencerBenson'><FiGithub size={25} /><span>Github</span> </a>
             </div>
             <Hamburger hamburgerOpen={hamburgerOpen} toggleHamburger={toggleHamburger} />
             <div className={`side-menu ${!hamburgerOpen ? 'hidden' : ''}`}>
